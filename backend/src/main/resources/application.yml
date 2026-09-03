@@ -1,0 +1,76 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  application:
+    name: hostel360-backend
+  profiles:
+    active: dev
+
+  # JPA & Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: true
+
+  # High-performance persistent H2 database by default
+  datasource:
+    url: jdbc:h2:file:./data/hostel360_db;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE;MODE=MySQL
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ""
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 30000
+      connection-timeout: 20000
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  # Servlet file upload settings
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# JWT Settings
+app:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration-milliseconds: 86400000 # 24 hours
+  upload:
+    dir: uploads/
+
+# SpringDoc OpenAPI / Swagger Settings
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+
+---
+# Optional MySQL Profile
+spring:
+  config:
+    activate:
+      on-profile: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQLDialect
+    open-in-view: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/hostel360_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver

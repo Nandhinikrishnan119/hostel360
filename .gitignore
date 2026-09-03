@@ -1,0 +1,21 @@
+# Java / Maven
+backend/target/
+backend/data/*.db
+backend/data/*.lock.db
+backend/uploads/
+backend/effective-pom-*.log
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# IDE and OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local modernization/session artifacts
+backend/.github/modernize/
