@@ -1,115 +1,218 @@
 # 🚀 Hostel360 — Intelligent Hostel Operations & Student Services Platform
 
-A full-stack, enterprise-grade college hostel management and student welfare platform built with **Java Spring Boot**, **React 18 + Tailwind CSS**, **JWT Authentication**, and **MySQL / Persistent Database Storage**.
+<p align="center">
+  <b>A full-stack intelligent hostel management and student services platform designed to digitize, simplify, and modernize hostel operations.</b>
+</p>
+
+<p align="center">
+  <a href="https://hostel360-frontend-znc9.onrender.com">
+    <img src="https://img.shields.io/badge/🌐%20Live%20Website-Hostel360-success?style=for-the-badge" alt="Live Website">
+  </a>
+  <a href="https://github.com/Nandhinikrishnan119/hostel360">
+    <img src="https://img.shields.io/badge/💻%20GitHub-Repository-black?style=for-the-badge&logo=github" alt="GitHub Repository">
+  </a>
+</p>
 
 ---
 
-## 📂 Project Structure
+# 🌐 Live Deployment
+
+### 🚀 Live Website
+
+**https://hostel360-frontend-znc9.onrender.com**
+
+### ⚙️ Backend Service
+
+**https://hostel360-backend-h8v5.onrender.com**
+
+### 💻 GitHub Repository
+
+**https://github.com/Nandhinikrishnan119/hostel360**
+
+---
+
+# 📌 Project Overview
+
+**Hostel360** is a full-stack, role-based hostel management and student welfare platform developed to transform traditional hostel administration into a centralized digital system.
+
+The platform brings together students, wardens, maintenance staff, mess managers, security personnel, and administrators into a single integrated application.
+
+It provides dedicated role-based portals for different hostel operations such as:
+
+- Student management
+- Room and occupancy management
+- Complaint management
+- Maintenance work orders
+- Mess and food management
+- Leave and gate-pass management
+- Parcel management
+- Student welfare
+- Fee management
+- Emergency/SOS support
+- Notifications and hostel announcements
+
+The application follows a **client-server architecture**, where the React frontend communicates with a Java Spring Boot backend through REST APIs.
+
+---
+
+# 🎯 Objectives
+
+The primary objectives of Hostel360 are:
+
+- 🏠 Digitize hostel management operations
+- 👨‍🎓 Provide students with a centralized hostel service platform
+- 👨‍💼 Simplify administrative and warden operations
+- 📝 Reduce paperwork and manual record maintenance
+- 🔧 Improve maintenance and complaint handling
+- 🍽️ Digitize mess and food-related operations
+- 🚪 Improve gate-pass and visitor management
+- 📦 Simplify parcel tracking and verification
+- 💰 Manage hostel fees and receipts efficiently
+- 🚨 Provide emergency and SOS support
+- 📊 Improve hostel operational visibility
+- 🔐 Provide secure role-based access
+- ⚡ Improve communication between students and hostel staff
+
+---
+
+# ✨ Key Features
+
+## 👨‍🎓 Student Portal
+
+Students can access a dedicated portal containing:
+
+- 🔐 Secure login
+- 👤 Student profile
+- 🏠 Hostel and room information
+- 🛏️ Roommate information
+- 📝 Complaint registration
+- 📊 Complaint status and SLA tracking
+- 🍱 Keep-My-Food requests
+- 🚪 Leave / out-pass requests
+- ❤️ Health logs
+- 💰 Hostel fees and receipts
+- 📦 Parcel tracking
+- 🔢 Parcel OTP verification
+- 📢 Hostel notices
+- 🔔 Notifications
+- 🚨 Emergency/SOS support
+- 💡 Student council suggestions
+
+---
+
+# 👩‍💼 Warden Portal
+
+The warden can manage and monitor hostel operations through a dedicated dashboard.
+
+### Features
+
+- 👥 Student management
+- 🏠 Hostel management
+- 🛏️ Room occupancy visualization
+- 📋 Complaint assignment
+- ⏱️ Complaint SLA monitoring
+- 🚪 Leave request approval
+- 👨‍🎓 Student welfare follow-ups
+- 💡 Student council suggestion review
+- 📢 Hostel notices
+- 🔔 Notifications
+- 📊 Hostel operational monitoring
+
+---
+
+# 🔧 Maintenance Staff Portal
+
+Maintenance personnel can manage hostel maintenance activities.
+
+### Features
+
+- 📝 View assigned work orders
+- 🔧 Manage maintenance tasks
+- ⏱️ SLA countdown tracking
+- 📋 Work order status updates
+- 📸 Resolution proof uploads
+- ⚡ Track pending maintenance requests
+- ✅ Update completed tasks
+
+---
+
+# 🍽️ Mess Manager Portal
+
+The mess management module helps digitize hostel dining operations.
+
+### Features
+
+- 📅 7-day dining schedule management
+- 🍛 Meal schedule updates
+- 🍱 Keep-My-Food hot-box packing
+- 📍 Shelf-slot assignment
+- ⭐ Food quality ratings
+- 📊 Dining-related management
+
+---
+
+# 🛡️ Security Desk Portal
+
+The security module provides digital hostel gate and parcel management.
+
+### Features
+
+- 🎫 Gate-pass scanning
+- 🚪 Student checkout/check-in
+- ⏰ Late arrival logging
+- 📦 Parcel inward management
+- 🔢 6-digit parcel OTP verification
+- 🚨 SOS emergency desk
+- 📋 Security activity tracking
+
+---
+
+# 👑 Super Admin Portal
+
+The Super Admin provides centralized control over the platform.
+
+### Features
+
+- 👥 User management
+- 🏢 Hostel management
+- 🛏️ Room management
+- 🔐 Role management
+- 📊 System-level monitoring
+- ⚙️ Platform configuration
+- 📋 Operational management
+
+---
+
+# 🔐 Authentication & Authorization
+
+Hostel360 implements secure authentication and role-based access control.
+
+### Authentication
+
+- JWT-based authentication
+- Secure login
+- Protected routes
+- Token-based API authorization
+- Session management
+
+### Role-Based Access
+
+Different users receive access to features according to their roles.
 
 ```text
-hostel360/
-├── backend/                  # Java Spring Boot 3.3.4 Application
-│   ├── src/main/java/        # 165+ Controller, Service, Entity, DTO, Repository classes
-│   ├── src/main/resources/   # application.yml, database settings
-│   ├── pom.xml               # Maven configuration
-│   └── data/                 # Persistent database storage directory
-├── frontend/                 # React 18 + Vite + Tailwind CSS Application
-│   ├── src/
-│   │   ├── components/       # Common UI elements (Navbar, Sidebar, StatCard, Modals)
-│   │   ├── context/          # AuthContext & NotificationContext
-│   │   ├── pages/            # 22+ dedicated role portals and management pages
-│   │   ├── routes/           # Role-based protected routing
-│   │   └── services/         # Axios API clients
-│   ├── package.json          # Node dependencies
-│   └── vite.config.js        # Vite build configuration
-├── start-all.bat             # 1-Click Windows launcher for both servers
-└── README.md                 # Complete platform documentation
-```
-
----
-
-## 💻 How to Open in Visual Studio Code
-
-1. Open **VS Code**.
-2. Click **File** $\rightarrow$ **Open Folder...** (or press `Ctrl + K`, `Ctrl + O`).
-3. Select the cloned `hostel360` folder.
-4. Or open from terminal/command prompt:
-   ```bash
-   code hostel360
-   ```
-
----
-
-## ⚡ Quick Start / Run Application
-
-### Prerequisites
-
-- Java 25 LTS (the backend Maven target and deployment runtime)
-- Maven 3.9 or newer
-- Node.js and npm for the frontend
-
-### Option A: 1-Click Launch (Windows)
-Double-click `start-all.bat` in the root folder.
-
-### Option B: Terminal Launch
-#### 1. Backend (Java Spring Boot)
-```bash
-cd backend
-mvn spring-boot:run
-```
-If Maven is not installed globally, install Maven 3.9+ or configure `MAVEN_HOME` to a Maven 3.9+ installation.
-*Backend runs on:* `http://localhost:8080`
-
-#### 2. Frontend (React Vite)
-```bash
-cd frontend
-npm install
-npm run dev
-```
-*Frontend runs on:* `http://localhost:5173`
-
-## Deploy On Render
-
-### Backend
-
-1. Create a **Web Service** from this repository.
-2. Select **Docker** as the runtime.
-3. Set the Dockerfile path to `backend/Dockerfile`.
-4. Set the Docker context to `backend`.
-5. Add `SPRING_PROFILES_ACTIVE=dev`.
-6. Add `CORS_ALLOWED_ORIGINS` with the deployed frontend URL, for example `https://hostel360-frontend.onrender.com`.
-
-The backend listens on port `8080` and exposes its health check at `/swagger-ui.html`.
-
-### Frontend
-
-1. Create a **Static Site** from the same repository.
-2. Set the root directory to `frontend`.
-3. Set the build command to `npm ci && npm run build`.
-4. Set the publish directory to `frontend/dist`.
-5. Add `VITE_API_URL=https://YOUR-BACKEND-URL.onrender.com/api`.
-6. Add `VITE_BASE_PATH=/` for a Render Static Site.
-
-After deployment, update the backend `CORS_ALLOWED_ORIGINS` value with the final frontend URL.
-
----
-
-## 🌐 Live Web & API Endpoints
-
-- **Web Application**: [http://localhost:5173](http://localhost:5173)
-- **Interactive Swagger 3.0 API Docs**: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-- **Database Console**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console) (`JDBC URL: jdbc:h2:file:./data/hostel360_db`, User: `sa`, Password: *[blank]*)
-
----
-
-## 🔑 Demo Role Credentials
-
-| Role | Username | Password | Key Capabilities |
-| :--- | :--- | :--- | :--- |
-| **Student Resident** | `student1` | `student123` | **Ananya Sundar** (Room B-204, Kaveri Girls Hostel) — Roommates, SLA complaints, Keep-My-Food box, Leave out-pass, Health logs, Fees & receipts, Parcel OTPs |
-| **Student Resident 2** | `student2` | `student123` | **Pooja Chawla** (Room B-204, Kaveri Girls Hostel) — Roommate to Ananya |
-| **Girls Hostel Warden** | `warden1` | `warden123` | **Dr. Anandita Kumar** — Room occupancy visualizer, complaint assignments, leave approvals, student welfare follow-ups, student council suggestions review, notices |
-| **Maintenance Staff** | `maint1` | `maint123` | **Ramesh Patel (Electrician)** — Work order tasks, SLA countdowns, resolution proof uploads |
-| **Mess Manager** | `mess1` | `mess123` | **Chef Vikram Singh** — 7-day dining schedule editor, Keep-My-Food hot box packing & shelf slot assignment, food quality ratings |
-| **Security Desk** | `security1` | `security123` | **Priya Sharma** — Active Gate pass scanner (checkout/checkin), late arrival logger, parcel inward & 6-digit OTP verification, SOS emergency desk |
-| **Super Admin** | `admin` | `admin123` | **Dr. Rajesh Sharma** — Executive dashboard, **Hostel Fee & Payment Management**, 100-pt Hostel Health Score, Predictive maintenance recurring defect alerts, Student roster |
+                    ┌─────────────────┐
+                    │      User       │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ JWT Login/Auth  │
+                    └────────┬────────┘
+                             │
+                 ┌───────────┼───────────┐
+                 ▼           ▼           ▼
+             Student       Warden      Staff
+                 │           │           │
+                 ▼           ▼           ▼
+             Student      Warden      Staff
+              Portal       Portal      Portal
