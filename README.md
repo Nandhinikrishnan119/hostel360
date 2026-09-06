@@ -1,305 +1,610 @@
-# Hostel360 — Intelligent Hostel Operations & Student Welfare Platform
+# 🏨 Hostel360 — Intelligent Hostel Management System
 
 <p align="center">
-  <b>A full-stack intelligent hostel management and student services platform designed to digitize, simplify, and modernize hostel operations.</b>
+  <b>A full-stack hostel management platform for students, wardens, maintenance staff, mess managers, security staff, and administrators.</b>
 </p>
 
 <p align="center">
-  <a href="https://hostel360-frontend-znc9.onrender.com">
-    <img src="https://img.shields.io/badge/Live%20Website-Hostel360-success?style=for-the-badge" alt="Live Website">
-  </a>
-  <a href="https://github.com/Nandhinikrishnan119/hostel360">
-    <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github" alt="GitHub Repository">
-  </a>
+  <a href="https://hostel360-frontend-znc9.onrender.com/">🌐 Live Demo</a> •
+  <a href="https://github.com/Nandhinikrishnan119/hostel360">📂 GitHub Repository</a>
 </p>
 
 ---
 
-# Live Deployment
+## 📌 Overview
 
-### Live Website
+**Hostel360** is a full-stack web application designed to digitize and simplify hostel operations through a centralized platform.
 
-**https://hostel360-frontend-znc9.onrender.com**
+The system provides role-based access for different hostel users and manages important operations such as:
 
-### Backend Service
+* Student and room management
+* Complaint registration and tracking
+* Maintenance management
+* Mess menu and feedback
+* Leave and out-pass management
+* Security and late-entry tracking
+* Parcel management
+* Hostel announcements
+* Emergency/SOS requests
+* Suggestions and feedback
+* Dashboard and analytics
 
-**https://hostel360-backend-h8v5.onrender.com**
-
-### GitHub Repository
-
-**https://github.com/Nandhinikrishnan119/hostel360**
-
----
-
-# Project Overview
-
-**Hostel360** is a full-stack, role-based hostel management and student welfare platform developed to transform traditional hostel administration into a centralized digital system.
-
-The platform brings together students, wardens, maintenance staff, mess managers, security personnel, and administrators into a single integrated application.
-
-It provides dedicated role-based portals for different hostel operations such as:
-
-- Student management
-- Room and occupancy management
-- Complaint management
-- Maintenance work orders
-- Mess and food management
-- Leave and gate-pass management
-- Parcel management
-- Student welfare
-- Fee management
-- Emergency/SOS support
-- Notifications and hostel announcements
-
-The application follows a **client-server architecture**, where the React frontend communicates with a Java Spring Boot backend through REST APIs.
+The application follows a layered backend architecture using **Java Spring Boot, Spring Security, JPA/Hibernate, and MySQL**, with a responsive **React.js** frontend.
 
 ---
 
-# Objectives
+## 🎯 Objectives
 
-The primary objectives of Hostel360 are:
-
-- Digitize hostel management operations
-- Provide students with a centralized hostel service platform
-- Simplify administrative and warden operations
-- Reduce paperwork and manual record maintenance
-- Improve maintenance and complaint handling
-- Digitize mess and food-related operations
-- Improve gate-pass and visitor management
-- Simplify parcel tracking and verification
-- Manage hostel fees and receipts efficiently
-- Provide emergency and SOS support
-- Improve hostel operational visibility
-- Provide secure role-based access
-- Improve communication between students and hostel staff
+* Digitize traditional hostel management processes
+* Provide a centralized platform for hostel operations
+* Reduce manual paperwork and communication delays
+* Improve complaint resolution and maintenance tracking
+* Provide role-based access to different hostel departments
+* Improve transparency between students and hostel administration
+* Provide useful analytics for hostel management
 
 ---
 
-# Key Features
+# 👥 User Roles
 
-## Student Portal
+Hostel360 supports multiple user roles with role-based access control.
 
-Students can access a dedicated portal containing:
-
-- Secure login
-- Student profile
-- Hostel and room information
-- Roommate information
-- Complaint registration
-- Complaint status and SLA tracking
-- Keep-My-Food requests
-- Leave / out-pass requests
-- Health logs
-- Hostel fees and receipts
-- Parcel tracking
-- Parcel OTP verification
-- Hostel notices
-- Notifications
-- Emergency/SOS support
-- Student council suggestions
+| Role                     | Responsibilities                                                              |
+| ------------------------ | ----------------------------------------------------------------------------- |
+| 👨‍🎓 **Student**        | Profile, complaints, leave requests, mess feedback, parcels, suggestions, SOS |
+| 👨‍💼 **Warden**         | Student management, complaints, approvals, announcements, monitoring          |
+| 🔧 **Maintenance Staff** | View and resolve assigned maintenance complaints                              |
+| 🍽️ **Mess Manager**     | Manage menus, food feedback, and mess-related information                     |
+| 🛡️ **Security Staff**   | Late entry, visitor/security monitoring, emergency handling                   |
+| 👑 **Super Admin**       | Complete hostel administration, users, analytics, and system monitoring       |
 
 ---
 
-# Warden Portal
+# 🚀 Key Features
 
-The warden can manage and monitor hostel operations through a dedicated dashboard.
+## 👨‍🎓 Student Portal
 
-### Features
+Students can:
 
-- Student management
-- Hostel management
-- Room occupancy visualization
-- Complaint assignment
-- Complaint SLA monitoring
-- Leave request approval
-- Student welfare follow-ups
-- Student council suggestion review
-- Hostel notices
-- Notifications
-- Hostel operational monitoring
-
----
-
-# Maintenance Staff Portal
-
-Maintenance personnel can manage hostel maintenance activities.
-
-### Features
-
-- View assigned work orders
-- Manage maintenance tasks
-- SLA countdown tracking
-- Work order status updates
-- Resolution proof uploads
-- Track pending maintenance requests
-- Update completed tasks
+* Manage their profile
+* View hostel and room information
+* View roommates
+* Submit complaints
+* Track complaint status
+* Submit leave/out-pass requests
+* View announcements
+* Track parcels
+* Provide mess feedback
+* Submit suggestions
+* Request emergency assistance
+* View relevant hostel information
 
 ---
 
-# Mess Manager Portal
+## 🏢 Warden Portal
 
-The mess management module helps digitize hostel dining operations.
+Wardens can:
 
-### Features
-
-- 7-day dining schedule management
-- Meal schedule updates
-- Keep-My-Food hot-box packing
-- Shelf-slot assignment
-- Food quality ratings
-- Dining-related management
-
----
-
-# Security Desk Portal
-
-The security module provides digital hostel gate and parcel management.
-
-### Features
-
-- Gate-pass scanning
-- Student checkout/check-in
-- Late arrival logging
-- Parcel inward management
-- 6-digit parcel OTP verification
-- SOS emergency desk
-- Security activity tracking
+* Monitor students
+* Manage complaints
+* Approve/reject leave requests
+* Monitor room occupancy
+* Publish announcements
+* Track hostel activities
+* Monitor maintenance progress
+* View hostel statistics
 
 ---
 
-# Super Admin Portal
+## 🔧 Maintenance Management
 
-The Super Admin provides centralized control over the platform.
+Maintenance staff can:
 
-### Features
+* View assigned complaints
+* Check complaint priority
+* Update complaint status
+* Track pending work
+* Mark complaints as resolved
 
-- User management
-- Hostel management
-- Room management
-- Role management
-- System-level monitoring
-- Platform configuration
-- Operational management
+### Complaint Lifecycle
 
----
-
-# Authentication & Authorization
-
-Hostel360 implements secure authentication and role-based access control.
-
-### Authentication
-
-- JWT-based authentication
-- Secure login
-- Protected routes
-- Token-based API authorization
-- Session management
-
-### Role-Based Access
-
-Different users receive access to features according to their roles.
-
-```
-                    _______________
-                   |      User      |
-                   |________________|
-                            |
-                            v
-                   _______________
-                  |  JWT Login/Auth |
-                  |_________________|
-                            |
-               _____________|_____________
-              |             |             |
-              v             v             v
-          Student        Warden         Staff
-              |             |             |
-              v             v             v
-          Student        Warden         Staff
-          Portal         Portal         Portal
+```text
+Student
+   ↓
+Submit Complaint
+   ↓
+Complaint Created
+   ↓
+Assigned to Staff
+   ↓
+Work in Progress
+   ↓
+Resolved
+   ↓
+Student Confirmation
+   ↓
+Closed
 ```
 
 ---
 
-## Technologies & Tools Used
+## ⏱️ SLA Monitoring & Escalation
 
-### Frontend
-- React - component-based UI library
-- Vite - fast build tool and dev server
-- CSS / JavaScript (ES6+) - styling and client-side logic
-- Axios / Fetch API - REST API communication with backend
+The system can monitor complaint resolution time based on priority.
 
-### Backend
-- Java (JDK 25) - core backend language
-- Spring Boot - REST API framework
-- Spring Security + JWT - authentication and role-based authorization
-- Maven - dependency management and build tool
-- Spring Data JPA / Hibernate - database ORM
-- MySQL / PostgreSQL - relational database
-
-### Architecture & APIs
-- REST APIs - client-server communication between React and Spring Boot
-- Role-Based Access Control (RBAC) - Student, Warden, Maintenance, Mess Manager, Security, Super Admin roles
-
-### Deployment
-- Render - hosting for both frontend and backend services
-  - Frontend: hostel360-frontend-znc9.onrender.com
-  - Backend: hostel360-backend-h8v5.onrender.com
-
-### Version Control
-- Git & GitHub - source control and collaboration
-
----
-
-## Getting Started
-
-### Prerequisites
-- Node.js and npm (for frontend)
-- Java and Maven (for backend)
-- Git
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Nandhinikrishnan119/hostel360.git
-cd hostel360
+```text
+Complaint Created
+        ↓
+SLA Timer Starts
+        ↓
+Staff Assigned
+        ↓
+Resolution Monitoring
+        ↓
+SLA Nearing Deadline
+        ↓
+Escalation
+        ↓
+Warden/Admin Notification
 ```
 
-2. Install frontend dependencies:
-```bash
-cd frontend
-npm install
-npm start
+Scheduled backend tasks can be used to monitor unresolved complaints and trigger escalation when required.
+
+---
+
+## 🍽️ Mess Management
+
+Mess managers can:
+
+* Manage daily/weekly menus
+* Update meal information
+* Receive food feedback
+* Monitor ratings
+* Track student suggestions
+
+Students can view menus and submit feedback.
+
+---
+
+## 🛂 Leave & Out-Pass Management
+
+Students can submit leave/out-pass requests.
+
+Wardens can:
+
+* Review requests
+* Approve or reject requests
+* Track request status
+
+```text
+Student
+   ↓
+Leave Request
+   ↓
+Warden Review
+   ↓
+Approve / Reject
+   ↓
+Student Notification
 ```
 
-3. Build and run backend:
-```bash
-cd backend
-mvn clean install
-mvn spring-boot:run
+---
+
+## 🛡️ Security Management
+
+Security staff can manage hostel security-related activities including:
+
+* Late entry tracking
+* Student entry monitoring
+* Visitor-related information
+* Emergency situations
+
+---
+
+## 📦 Parcel Management
+
+Hostel360 provides parcel tracking functionality.
+
+Features include:
+
+* Parcel registration
+* Student notification
+* Parcel status tracking
+* OTP-based parcel verification
+* Collection status
+
+---
+
+## 🚨 Emergency / SOS
+
+Students can raise emergency requests through the platform.
+
+Emergency requests can be monitored by authorized hostel staff for faster response.
+
+---
+
+## 📢 Announcements
+
+Authorized staff can publish hostel announcements.
+
+Students can view important information such as:
+
+* Hostel notices
+* Events
+* Maintenance updates
+* Mess announcements
+* General instructions
+
+---
+
+# 🔐 Authentication & Authorization
+
+Hostel360 implements secure authentication and role-based authorization.
+
+### Security Features
+
+* JWT-based authentication
+* Spring Security
+* Role-Based Access Control (RBAC)
+* Password hashing
+* Backend authorization
+* Request validation
+* Secure API endpoints
+* Centralized exception handling
+* CORS configuration
+
+```text
+User Login
+    ↓
+Authentication
+    ↓
+JWT Token
+    ↓
+API Request
+    ↓
+JWT Validation
+    ↓
+Role Verification
+    ↓
+Authorized Resource
 ```
 
 ---
 
-## License
+# 🏗️ System Architecture
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Hostel360 follows a layered architecture.
+
+```text
+┌───────────────────────────────┐
+│        React Frontend         │
+│   React + Vite + Tailwind     │
+└───────────────┬───────────────┘
+                │
+                │ REST API / JSON
+                ▼
+┌───────────────────────────────┐
+│      Spring Boot Backend      │
+├───────────────────────────────┤
+│ Controllers                   │
+│       ↓                       │
+│ Services                      │
+│       ↓                       │
+│ Repositories                  │
+│       ↓                       │
+│ JPA / Hibernate               │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│          MySQL Database       │
+└───────────────────────────────┘
+```
 
 ---
 
-## Author
+# 🛠️ Tech Stack
 
-**Nandhinikrishnan119**
-- GitHub: [@Nandhinikrishnan119](https://github.com/Nandhinikrishnan119)
-- Email: nandhinip173@gmail.com
+## Frontend
+
+* **React.js**
+* **Vite**
+* **JavaScript (ES6+)**
+* **Tailwind CSS**
+* **React Router**
+* **Axios**
+* **React Icons**
+* **Recharts**
+
+## Backend
+
+* **Java 25**
+* **Spring Boot**
+* **Spring Web**
+* **Spring Security**
+* **JWT**
+* **Spring Data JPA**
+* **Hibernate**
+* **Maven**
+
+## Database
+
+* **MySQL**
+
+## Architecture & Development
+
+* RESTful APIs
+* Layered Architecture
+* DTO-based API design
+* Role-Based Access Control
+* MVC principles
+* Exception Handling
+* Input Validation
+
+## Tools
+
+* Git
+* GitHub
+* VS Code
+* IntelliJ IDEA
+* Postman
+* Maven
+
+## Deployment
+
+* Render
+* GitHub
 
 ---
 
-## Contributing
+# 📂 Project Structure
 
-Contributions are welcome! Please feel free to submit issues or pull requests.
+```text
+hostel360/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── routes/
+│   │   ├── context/
+│   │   └── App.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── .../
+│   │   │   │       ├── controller/
+│   │   │   │       ├── service/
+│   │   │   │       ├── repository/
+│   │   │   │       ├── entity/
+│   │   │   │       ├── dto/
+│   │   │   │       ├── security/
+│   │   │   │       └── exception/
+│   │   │   │
+│   │   │   └── resources/
+│   │   │       └── application.properties
+│   │   │
+│   │   └── test/
+│   │
+│   └── pom.xml
+│
+└── README.md
+```
 
 ---
 
-**Thank you for using Hostel360!**
+# 🗄️ Database
+
+The application uses **MySQL** for persistent data storage.
+
+Major entities include:
+
+* Users
+* Students
+* Rooms
+* Complaints
+* Complaint Assignments
+* Leave Requests
+* Announcements
+* Mess Menus
+* Mess Feedback
+* Parcels
+* Suggestions
+* Emergency Requests
+* Notifications
+* Audit Logs
+
+Relationships between entities are managed using **JPA/Hibernate**.
+
+---
+
+# 🔌 REST API
+
+The backend exposes RESTful APIs for frontend communication.
+
+Example API structure:
+
+```text
+/api/auth
+/api/users
+/api/students
+/api/rooms
+/api/complaints
+/api/maintenance
+/api/leave
+/api/announcements
+/api/mess
+/api/parcels
+/api/security
+/api/emergency
+/api/notifications
+/api/admin
+```
+
+APIs are protected using **JWT authentication and role-based authorization** where required.
+
+---
+
+# 📊 Dashboard & Analytics
+
+The system provides dashboards for authorized users.
+
+Examples of tracked information:
+
+* Total students
+* Room occupancy
+* Pending complaints
+* Resolved complaints
+* Complaint priority
+* Maintenance workload
+* Leave requests
+* Mess feedback
+* Hostel activity
+
+Charts and visualizations can be implemented using **Recharts**.
+
+---
+
+# 🧠 Intelligent Features
+
+Hostel360 is designed with several intelligent hostel-management capabilities.
+
+### Duplicate Complaint Detection
+
+Helps identify potentially repeated complaints related to the same issue.
+
+### Complaint Trend Analysis
+
+Identifies frequently occurring complaint categories and patterns.
+
+### Recurring Problem Detection
+
+Helps administrators identify rooms or facilities with repeated maintenance problems.
+
+### Predictive Maintenance
+
+Historical maintenance data can be analyzed to identify infrastructure that may require attention.
+
+### Hostel Health Score
+
+A dashboard-level score can combine operational indicators such as:
+
+* Complaint resolution
+* Maintenance workload
+* Occupancy
+* Mess feedback
+* Student feedback
+
+The score is intended to provide an explainable overview of hostel operational health.
+
+---
+
+
+### Live Application
+
+**Frontend:**
+https://hostel360-frontend-znc9.onrender.com/
+
+**Backend:**
+https://hostel360-backend-h8v5.onrender.com/
+
+---
+
+# 🧪 Testing
+
+The project can be tested at multiple levels:
+
+* Backend unit testing
+* Service-layer testing
+* REST API testing
+* Authentication testing
+* Role authorization testing
+* Frontend component testing
+* End-to-end workflow testing
+
+**Postman** can be used to test REST APIs during development.
+
+---
+
+# 📈 Future Enhancements
+
+Potential future improvements include:
+
+* Mobile application
+* Email/SMS notifications
+* Advanced ML-based complaint classification
+* AI-powered hostel assistant
+* Face recognition for authorized entry
+* Advanced predictive maintenance models
+* Online hostel fee payments
+* Cloud database integration
+* Advanced audit and security monitoring
+
+---
+
+# 💡 Why Hostel360?
+
+Hostel360 demonstrates practical experience in:
+
+* Full-stack web development
+* Java backend development
+* Spring Boot
+* Spring Security
+* JWT authentication
+* REST API development
+* Database design
+* Role-based authorization
+* React.js
+* Responsive UI development
+* Deployment
+* Software architecture
+* CRUD operations
+* Business workflow implementation
+
+The project is designed to represent a **real-world enterprise application rather than a basic CRUD project**.
+
+---
+
+# 📚 Learning Outcomes
+
+Through this project, the following concepts are demonstrated:
+
+* Building full-stack applications
+* Designing RESTful APIs
+* Implementing authentication and authorization
+* Working with Spring Boot
+* Connecting Java applications with MySQL
+* Using JPA/Hibernate for database persistence
+* Designing layered architectures
+* Managing frontend-backend communication
+* Implementing role-based workflows
+* Deploying applications to the cloud
+* Working with Git and GitHub
+
+---
+
+
+# 👩‍💻 Author
+
+**Nandhini Krishnan**
+
+Computer Science & Engineering Student
+
+GitHub:
+https://github.com/Nandhinikrishnan119
+
+---
+
+<p align="center">
+  ⭐ If you found Hostel360 useful, consider giving the repository a star!
+</p>
+
+<p align="center">
+  <b>Hostel360 — Digitizing Hostel Operations Through Technology</b>
+</p>
