@@ -1,7 +1,7 @@
 # 🚀 Hostel360 — Intelligent Hostel Operations & Student Welfare Platform
 
 <p align="center">
-  <b>A full-stack intelligent hostel management and student welfare platform designed to digitize, simplify, and modernize hostel operations.</b>
+  <b>A full-stack intelligent hostel management and student services platform designed to digitize, simplify, and modernize hostel operations.</b>
 </p>
 
 <p align="center">
@@ -199,7 +199,7 @@ Hostel360 implements secure authentication and role-based access control.
 
 Different users receive access to features according to their roles.
 
-```text
+```
                     ┌─────────────────┐
                     │      User       │
                     └────────┬────────┘
@@ -216,3 +216,73 @@ Different users receive access to features according to their roles.
                  ▼           ▼           ▼
              Student      Warden      Staff
               Portal       Portal      Portal
+```
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React** - UI library
+- **JavaScript** - Programming language
+- **HTML/CSS** - Markup and styling
+
+### Backend
+- **Java Spring Boot** - Backend framework
+- **REST APIs** - API architecture
+- **Database** - Data persistence
+
+---
+
+## 📚 Getting Started
+
+### Prerequisites
+- Node.js and npm (for frontend)
+- Java and Maven (for backend)
+- Git
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Nandhinikrishnan119/hostel360.git
+cd hostel360
+```
+
+2. Install frontend dependencies:
+```bash
+cd frontend
+npm install
+npm start
+```
+
+3. Build and run backend:
+```bash
+cd backend
+mvn clean install
+mvn spring-boot:run
+```
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 👤 Author
+
+**Nandhinikrishnan119**
+- GitHub: [@Nandhinikrishnan119](https://github.com/Nandhinikrishnan119)
+- Email: nandhinip173@gmail.com
+
+---
+
+## 🙌 Contributing
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+---
+
+**Thank you for using Hostel360!** 🎉
