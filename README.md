@@ -1,4 +1,4 @@
-# 🚀 Hostel360 — Intelligent Hostel Operations & Student Welfare Platform
+# Hostel360 — Intelligent Hostel Operations & Student Welfare Platform
 
 <p align="center">
   <b>A full-stack intelligent hostel management and student services platform designed to digitize, simplify, and modernize hostel operations.</b>
