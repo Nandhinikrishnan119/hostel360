@@ -220,17 +220,33 @@ Different users receive access to features according to their roles.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies & Tools Used
 
 ### Frontend
-- **React** - UI library
-- **JavaScript** - Programming language
-- **HTML/CSS** - Markup and styling
+- ⚛️ **React** — component-based UI library
+- ⚡ **Vite** — fast build tool and dev server
+- 🎨 **CSS / JavaScript (ES6+)** — styling and client-side logic
+- 🔗 **Axios / Fetch API** — REST API communication with backend
 
 ### Backend
-- **Java Spring Boot** - Backend framework
-- **REST APIs** - API architecture
-- **Database** - Data persistence
+- ☕ **Java (JDK 25)** — core backend language
+- 🌱 **Spring Boot** — REST API framework
+- 🔐 **Spring Security + JWT** — authentication and role-based authorization
+- 📦 **Maven** — dependency management and build tool
+- 🗄️ **Spring Data JPA / Hibernate** — database ORM
+- 🐬 **MySQL / PostgreSQL** — relational database
+
+### Architecture & APIs
+- 🔗 **REST APIs** — client-server communication between React and Spring Boot
+- 🧩 **Role-Based Access Control (RBAC)** — Student, Warden, Maintenance, Mess Manager, Security, Super Admin roles
+
+### Deployment
+- 🚀 **Render** — hosting for both frontend and backend services
+  - Frontend: `hostel360-frontend-znc9.onrender.com`
+  - Backend: `hostel360-backend-h8v5.onrender.com`
+
+### Version Control
+- 🐙 **Git & GitHub** — source control and collaboration
 
 ---
 
