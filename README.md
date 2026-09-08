@@ -1,4 +1,4 @@
-# 🏨 Hostel360 — Intelligent Hostel Management System
+# 🏨 Hostel360 — Intelligent Hostel Operations & Student Welfare Platform
 
 <p align="center">
   <b>A full-stack hostel management platform for students, wardens, maintenance staff, mess managers, security staff, and administrators.</b>
